@@ -1,27 +1,30 @@
 # Sentiment Unleashed: Amazon Reviews NLP Analysis 🚀
 
-Welcome to the exciting journey of unraveling sentiments hidden within Amazon reviews! This project leverages the power of natural language processing (NLP) to categorize sentiments as positive, negative, or neutral across various product categories.
+Step into the world of Natural Language Processing (NLP) to uncover hidden sentiments in Amazon reviews! This project is designed to classify customer feedback into positive, negative, or neutral sentiments while also predicting star ratings and product categories using advanced machine learning techniques.
+
 
 ## 🧰 What's Inside the Box?
 
 ### Data Processing 🔄
 
-Utilize PySpark or Pandas to clean, transform, and prepare the Amazon reviews data. Explore the magic in:
-- `processing/process_amazon_reviews_pandas.py`
-- `processing/process_amazon_data_spark.py`
+Efficiently preprocess Amazon review data using Pandas or PySpark to clean, structure, and prepare data for analysis. Key scripts include:
+📂 processing/process_reviews_pandas.py
+📂 processing/process_reviews_spark.py
 
 ### Analysis 📊
 
-Dive into detailed analysis with Jupyter notebooks:
-- Exploratory Data Analysis (EDA)
-- Predictions: Star Ratings, Product Categories, Sentiment Labels
-- Statistical Significance Testing
+Dive into Jupyter notebooks for detailed insights:
+✔ Exploratory Data Analysis (EDA)
+✔ Sentiment Classification: Positive, Negative, Neutral
+✔ Product Category & Star Rating Predictions
+✔ Statistical Significance Testing
 
 ### Natural Language Processing (NLP) 📝
 
-Explore the NLP techniques used:
-- Text Cleaning: Lowercasing, HTML unescaping, punctuation removal
-- Sentiment Analysis: Vader Sentiment library
+This project employs advanced NLP techniques for accurate predictions:
+✔ Text Preprocessing: Lowercasing, punctuation removal, HTML unescaping
+✔ Sentiment Analysis: Utilizing the Vader sentiment model for classification
+✔ Feature Engineering: TF-IDF, word embeddings, and vectorization
 
 ## 🚀 Get Started
 
@@ -124,6 +127,7 @@ python3 run_models.py
 
 This will generate classification reports and scores for the Bayes models, displaying them in the standard output. Make sure you have the required models and validation data available before running this script.
 
-## ⚠️ Spark Warning
-
-Running Spark jobs requires significant memory and may not be suitable for machines with limited resources. If you are an SFU student, faculty member, or staff, consider using CSIL if you wish to run Spark jobs. Otherwise, you can choose the Pandas option for data processing.
+## ⚠️ Important Notes
+🔹 Spark jobs require significant memory and may not run on low-resource machines.
+🔹 If memory is a constraint, use Pandas-based data processing instead.
+🔹 The project supports GPU acceleration for deep learning models.
